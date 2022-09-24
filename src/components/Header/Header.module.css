@@ -1,0 +1,70 @@
+.header {
+    height:140px
+
+}
+
+.baner {
+display: flex;
+justify-content: center;
+font-weight: bold;
+background-color: BLACK;
+color: white;
+padding: 10px 0;
+font-size: 0.8rem;
+
+
+}
+.logo {
+    padding-left: 40px;
+    width: 100px;
+    height: 100px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: black
+}
+
+
+.categories__list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-weight: bold;
+    height: 20px;
+
+}
+
+.categories__list__item {
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.categories__list__item:hover {
+    border-bottom: 2px solid black;
+}
+
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+}
+
+
+.icons__profile {
+    display: flex;
+    flex-direction: row;
+}
+.icons__profile__item {
+    height: 25px;
+    width: 25px;
+    margin-left: 16px;
+}

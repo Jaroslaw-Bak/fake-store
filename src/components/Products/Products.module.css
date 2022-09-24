@@ -1,0 +1,19 @@
+.products {
+   margin: 100px 10%
+}
+
+.categoryFilter {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+
+.products__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+
+}
+
