@@ -1,23 +1,22 @@
 .header {
-    height:140px
+    
 
 }
 
 .baner {
-display: flex;
-justify-content: center;
-font-weight: bold;
-background-color: BLACK;
-color: white;
-padding: 10px 0;
-font-size: 0.8rem;
-
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    background-color: BLACK;
+    color: white;   
+    padding: 10px 0;
+    font-size: 0.8rem;
 
 }
 .logo {
     padding-left: 40px;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
 
 .navigation {
@@ -25,9 +24,10 @@ font-size: 0.8rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
 }
 
-.link {
+.categories__list a {
     text-decoration: none;
     color: black
 }
@@ -38,19 +38,17 @@ font-size: 0.8rem;
     flex-direction: row;
     list-style-type: none;
     font-weight: bold;
-    height: 20px;
 
 }
 
-.categories__list__item {
+.categories__list li {
     margin-left: 20px;
     text-decoration: none;
 }
 
-.categories__list__item:hover {
+.categories__list li:hover {
     border-bottom: 2px solid black;
 }
-
 
 .icons {
     display: flex;
@@ -63,8 +61,42 @@ font-size: 0.8rem;
     display: flex;
     flex-direction: row;
 }
-.icons__profile__item {
+.icons__profile img {
     height: 25px;
     width: 25px;
     margin-left: 16px;
 }
+.icons__profile__menu {
+    display: none;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .categories__list {
+        display: block;
+        text-align: center;
+        position: absolute;
+        top: 115px;
+        right: 0;
+        width: 100%; 
+        background-color: black;      
+    }
+    
+    .categories__list__off {
+        visibility: hidden;
+    }
+    .categories__list li {
+        margin-left: 0;
+        height: 25px;
+
+    }
+    .categories__list li a {
+        color: white;
+
+    }
+    .icons__profile__menu {
+        display:block
+    }
+
+}
+

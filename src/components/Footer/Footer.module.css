@@ -5,28 +5,37 @@ color: white
 
 .row {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
 }
 
 .col__2 {
-    padding: 80px;
+    padding: 50px 0;
 }
 
 .title {
     margin-bottom: 20px;
 }
-img {
-    width: 50px
+.footer img {
+    width: 30px
 }
 
 .socials__element {
-    padding-right: 20px;
+    padding-right: 10px;
 } 
 
 .footer > p {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+    .col__2 {
+        flex-basis: 90%;
+    }
 }
