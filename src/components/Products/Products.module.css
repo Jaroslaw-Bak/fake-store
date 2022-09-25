@@ -1,11 +1,20 @@
 .products {
-   margin: 100px 10%
+margin: 100px 10% 0 ;
 }
 
-.categoryFilter {
+.row {
+    display: flex; 
+    flex-basis: 100%;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    font-size: 25px;
+
+}
+.col__2 {
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 20px;
+}
+.col__2 select {
+    margin-left: 20px;
 }
 
 
@@ -13,7 +22,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: space-evenly
 
 }
 

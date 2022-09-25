@@ -15,12 +15,16 @@ const Products = () => {
 
   return (    
     <div className={styles.products}>
-      <div className={styles.categoryFilter}>
-        <div className={styles.category}>
-          category: {category}
+      <div className={styles.row}>
+        <div className={styles.col__2}>
+          <h3>{category}</h3>
         </div>
-        <div className={styles.filter}>
-          Filter and sort
+        <div className={styles.col__2}>
+          <select>
+            <option>Default sorting </option>
+            <option>Sort by price up </option>
+            <option>Sort by price down</option>
+          </select>
         </div>
       </div>
         <div className={styles.products__list}>

@@ -36,6 +36,7 @@
 .categories__list {
     display: flex;
     flex-direction: row;
+    align-items: center;
     list-style-type: none;
     font-weight: bold;
 

@@ -36,7 +36,7 @@ const Header = () => {
                             <Link to='/Furniture' >FURNITURE</Link>
                         </li>
                         <li onClick={() => changeCategory('Shoes')}>
-                            <Link to='/Shoe'  >SHOES</Link>
+                            <Link to='/Shoes'  >SHOES</Link>
                         </li>
                         <li onClick={() => changeCategory('Others')}> 
                             <Link to='/Others' >OTHERS</Link>

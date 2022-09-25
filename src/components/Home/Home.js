@@ -12,6 +12,14 @@ import profile from '../../assets/profile.jpg'
 import profile2 from '../../assets/profile2.jpg'
 import profile3 from '../../assets/profile3.jpg'
 import logo from '../../assets/logo3.png'
+import new1 from '../../assets/new1.jpg'
+import new2 from '../../assets/new2.jpg'
+import new3 from '../../assets/new3.jpg'
+import new4 from '../../assets/new4.jpg'
+import new5 from '../../assets/new5.jpg'
+import new6 from '../../assets/new6.jpg'
+import new7 from '../../assets/new7.jpg'
+import new8 from '../../assets/new8.jpg'
 
 const Home = () => {
   return (
@@ -86,42 +94,42 @@ const Home = () => {
             </div>
           <div className={styles.row}>
             <div className={styles.col__4}>
-              <img src={featured1} alt='#' />
+              <img src={new1} alt='#' />
               <h4>"Rustic Rubber Shirt</h4>
               <p>$250</p>
             </div>
             <div className={styles.col__4}>
-              <img src={featured2} alt='#' />
+              <img src={new2} alt='#' />
               <h4>watch</h4>
               <p>$100</p>
             </div>
             <div className={styles.col__4}>
-              <img src={featured3} alt='#' />
+              <img src={new3} alt='#' />
               <h4>Generic Soft Chair</h4>
               <p>$250</p>
             </div>
             <div className={styles.col__4}>
-              <img src={featured4} alt='#' />
+              <img src={new4} alt='#' />
               <h4>Awesome Frozen Shoes</h4>
               <p>$250</p>
             </div>
             <div className={styles.col__4}>
-              <img src={featured1} alt='#' />
+              <img src={new5} alt='#' />
               <h4>"Rustic Rubber Shirt</h4>
               <p>$250</p>
             </div>
             <div className={styles.col__4}>
-              <img src={featured2} alt='#' />
+              <img src={new6} alt='#' />
               <h4>watch</h4>
               <p>$100</p>
             </div>
             <div className={styles.col__4}>
-              <img src={featured3} alt='#' />
+              <img src={new7} alt='#' />
               <h4>Generic Soft Chair</h4>
               <p>$250</p>
             </div>
             <div className={styles.col__4}>
-              <img src={featured4} alt='#' />
+              <img src={new8} alt='#' />
               <h4>Awesome Frozen Shoes</h4>
               <p>$250</p>
             </div>
