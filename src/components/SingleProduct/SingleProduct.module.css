@@ -1,0 +1,70 @@
+.row {
+    margin: 100px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col__2 {
+    flex-basis: 49%;
+    
+}
+
+.col__2 img {
+    max-width: 100%;
+    min-width: 250px;
+}
+
+.col__2 h1 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.price {
+    margin-bottom: 10px;
+    color: #626267;
+    font-weight: 900;
+}
+
+.description {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.col__2 > select {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+
+}
+.col__2 input {
+    width: 30px;
+    padding-left: 10px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.col__2 button {
+    display: inline-block;
+    background: darkcyan;
+    color: white;
+    padding: 9px 28px;
+    border-radius: 20px;
+    transition: background 0.5s;
+    border: none;
+}
+
+.col__2 button:hover {
+    background-color: #074F57 ;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .col__2 {
+        flex-basis: 100%;
+        align-items: center;        
+    }
+
+
+}

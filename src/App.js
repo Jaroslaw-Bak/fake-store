@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import Cart from './components/Cart/Cart';
 import axiosDataContext from './axiosDataContext';
 import { DataProvider } from './DataContext';
+import SingleProduct from './components/SingleProduct/SingleProduct';
 
 
 function App () {
@@ -38,6 +39,7 @@ function App () {
               <Route path='/Shoes' element={<Products />}/> 
               <Route path='/Others' element={<Products />}/>
               <Route path='/Cart' element={<Cart />}/> 
+              <Route path='/SingleProduct' element={<SingleProduct />} />
             </Routes>
             <Footer />
           </Router>

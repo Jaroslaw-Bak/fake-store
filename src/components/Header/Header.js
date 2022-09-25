@@ -46,7 +46,6 @@ const Header = () => {
                 <div className={styles.icons}>
                     <div className={styles.icons__profile}>
                         <img src={profile} alt='profile' />
-                        <img src={favorite} alt='favorite' />
                         <Link to='/Cart'><img src={cart} alt='cart'/></Link>
                         <img src={menu} className={styles.icons__profile__menu} onClick={toggleMenu} />
                         

@@ -33,7 +33,7 @@
 }
 
 .col__2 h1 {
-    font-size: 50px;
+    font-size: 30px;
     line-height: 60px;
     margin: 25px 0
     
@@ -142,7 +142,7 @@
     width: 50px
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1300px) {
 
     .col__2 h1 {
         font-size: 30px;

@@ -30,7 +30,7 @@ const Home = () => {
            <div className={styles.col__2__margin}>
             <div>
               <h1>Change Your Home <br/> with our products</h1>
-              <p>Lorem Ipsum is simply dummy text of the <br/> printing and typesetting</p>
+              <p>Lorem Ipsum is simply dummy text<br /> of the printing and typesetting</p>
               <button className={styles.btn}>Explore Now  &#10141;</button>
             </div>
            </div>
