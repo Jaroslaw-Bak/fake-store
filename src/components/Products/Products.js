@@ -28,7 +28,7 @@ const Products = () => {
         </div>
       </div>
         <div className={styles.products__list}>
-          {categoryProducts ? categoryProducts.map(product => <Product key={product.id} {...product}/>) : <p>loading</p>}
+          {categoryProducts && categoryProducts.map(product => <Product key={product.id} {...product}/>)}
         </div>
     </div>  
   )
