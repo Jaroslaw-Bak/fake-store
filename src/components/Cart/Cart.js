@@ -1,13 +1,12 @@
 import styles from './Cart.module.css'
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { DataContext } from "../../DataContext"
-import watch from '../../assets/new4.jpg'
+
 
 const Cart = () => {
 
-    const { cartData } = useContext(DataContext)
+    const { cartData, removeFromCart } = useContext(DataContext)
 
-    
   return (
     <>
           <div className={styles.cart}>
@@ -22,13 +21,17 @@ const Cart = () => {
               </tr>
               {cartData.map(product => (
               <tr>
-                <td>X</td>
+                <td><button onClick={() => removeFromCart(product)}>X</button></td>
                 <td>
                   <img src={product.images[0]} alt='watch' /> 
                 </td>
                 <td className={styles.product}>{product.title}</td>
                 <td>{product.price}</td>
-                <td><input placeholder='1' /></td>
+                <td>
+                  <input
+                    placeholder='1'
+                    />
+                </td>
                 <td>{product.price}</td>
               </tr>
               ))}   

@@ -1,11 +1,7 @@
 import styles from './Product.module.css'
-import { DataContext } from '../../DataContext';
-import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 const Product = ({id, title, price, images}) => {
-
-  const { addToCart } = useContext(DataContext)
 
   return (
     <div className={styles.row}>

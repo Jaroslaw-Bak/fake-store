@@ -4,7 +4,6 @@ import { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
-
 const SingleProduct = () => {
 
   const { id } = useParams();
@@ -21,8 +20,6 @@ const SingleProduct = () => {
         setProduct(response.data)
       })
   }
-
-
     
   return (
     product && (
@@ -34,13 +31,6 @@ const SingleProduct = () => {
           <h1>{product.title}</h1>
           <p className={styles.price}>${product.price}</p>
           <p className={styles.description}>{product.description}</p>
-          <select>
-            <option>Select size</option>
-            <option>39</option>
-            <option>40</option>
-            <option>41</option>
-            <option>42</option>
-          </select>
           <input placeholder='1'></input>
           <button onClick={() => addToCart(product)}>Add to cart</button>
         </div>

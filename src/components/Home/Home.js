@@ -1,8 +1,6 @@
 import styles from './Home.module.css'
 import img from '../../assets/1logo.png'
-import clothes from '../../assets/clothes.jpg'
-import electronics from '../../assets/electronics.jpg'
-import shoes from '../../assets/shoes.jpg'
+import { Link } from 'react-router-dom'
 import featured1 from '../../assets/featured1.jpg'
 import featured2 from '../../assets/featured2.jpg'
 import featured3 from '../../assets/featured3.jpg'
@@ -11,7 +9,6 @@ import comentIcon from '../../assets/comment.png'
 import profile from '../../assets/profile.jpg'
 import profile2 from '../../assets/profile2.jpg'
 import profile3 from '../../assets/profile3.jpg'
-import logo from '../../assets/logo3.png'
 import new1 from '../../assets/new1.jpg'
 import new2 from '../../assets/new2.jpg'
 import new3 from '../../assets/new3.jpg'
@@ -31,7 +28,9 @@ const Home = () => {
             <div>
               <h1>Change Your Home <br/> with our products</h1>
               <p>Lorem Ipsum is simply dummy text<br /> of the printing and typesetting</p>
-              <button className={styles.btn}>Explore Now  &#10141;</button>
+              <Link to='/Clothes'>
+                <button className={styles.btn}>Explore Now  &#10141;</button>
+              </Link>
             </div>
            </div>
            
@@ -64,22 +63,30 @@ const Home = () => {
             </div>
           <div className={styles.row}>
             <div className={styles.col__4}>
-              <img src={featured1} alt='#' />
+              <Link to='/SingleProduct/65'>                
+                <img src={featured1} alt='#' />
+              </Link>
               <h4>"Rustic Rubber Shirt</h4>
               <p>$250</p>
             </div>
             <div className={styles.col__4}>
-              <img src={featured2} alt='#' />
+              <Link to='/SingleProduct/132'>    
+                <img src={featured2} alt='#' />
+              </Link>
               <h4>watch</h4>
               <p>$100</p>
             </div>
             <div className={styles.col__4}>
-              <img src={featured3} alt='#' />
+              <Link to='/SingleProduct/156'>    
+                <img src={featured3} alt='#' />
+              </Link>
               <h4>Generic Soft Chair</h4>
               <p>$250</p>
             </div>
             <div className={styles.col__4}>
-              <img src={featured4} alt='#' />
+              <Link to='/SingleProduct/155'>    
+                <img src={featured4} alt='#' />
+              </Link>
               <h4>Awesome Frozen Shoes</h4>
               <p>$250</p>
             </div>
@@ -94,42 +101,58 @@ const Home = () => {
             </div>
           <div className={styles.row}>
             <div className={styles.col__4}>
-              <img src={new1} alt='#' />
+              <Link to='/SingleProduct/125'>    
+                <img src={new1} alt='#' />
+              </Link>
               <h4>"Rustic Rubber Shirt</h4>
               <p>$250</p>
             </div>
             <div className={styles.col__4}>
-              <img src={new2} alt='#' />
+              <Link to='/SingleProduct/132'>    
+                <img src={new2} alt='#' />
+              </Link>
               <h4>watch</h4>
               <p>$100</p>
             </div>
             <div className={styles.col__4}>
-              <img src={new3} alt='#' />
+              <Link to='/SingleProduct/125'>    
+                <img src={new3} alt='#' />
+              </Link>
               <h4>Generic Soft Chair</h4>
               <p>$250</p>
             </div>
             <div className={styles.col__4}>
-              <img src={new4} alt='#' />
+              <Link to='/SingleProduct/132'>    
+                <img src={new4} alt='#' />
+              </Link>
               <h4>Awesome Frozen Shoes</h4>
               <p>$250</p>
             </div>
             <div className={styles.col__4}>
-              <img src={new5} alt='#' />
+              <Link to='/SingleProduct/135'>    
+                <img src={new5} alt='#' />
+              </Link>
               <h4>"Rustic Rubber Shirt</h4>
               <p>$250</p>
             </div>
             <div className={styles.col__4}>
-              <img src={new6} alt='#' />
+              <Link to='/SingleProduct/147'>    
+                <img src={new6} alt='#' />
+              </Link>
               <h4>watch</h4>
               <p>$100</p>
             </div>
             <div className={styles.col__4}>
-              <img src={new7} alt='#' />
+              <Link to='/SingleProduct/151'>    
+                <img src={new7} alt='#' />
+              </Link>
               <h4>Generic Soft Chair</h4>
               <p>$250</p>
             </div>
             <div className={styles.col__4}>
-              <img src={new8} alt='#' />
+              <Link to='/SingleProduct/144'>    
+                <img src={new8} alt='#' />
+              </Link>
               <h4>Awesome Frozen Shoes</h4>
               <p>$250</p>
             </div>

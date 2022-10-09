@@ -26,19 +26,19 @@ const Header = () => {
                 <Link to='/'><img src={logo} className={styles.logo} alt='logo' /></Link>
                 <div className={styles.categories} onClick={()=> {setActive(true)}}>
                     <ul className={`${styles.categories__list} + ${isActive && styles.categories__list__off}`}>
-                        <li onClick={() => changeCategory('Clothes')}>
+                        <li onClick={() => changeCategory('1')}>
                             <Link to='/Clothes' >CLOTHES</Link>
                         </li>
-                        <li onClick={() => changeCategory('Electronics')}> 
+                        <li onClick={() => changeCategory('2')}> 
                             <Link to='/Electronics' >ELECTRONICS</Link>
                         </li>
-                        <li onClick={() => changeCategory('Furniture')}> 
+                        <li onClick={() => changeCategory('3')}> 
                             <Link to='/Furniture' >FURNITURE</Link>
                         </li>
-                        <li onClick={() => changeCategory('Shoes')}>
+                        <li onClick={() => changeCategory('4')}>
                             <Link to='/Shoes'  >SHOES</Link>
                         </li>
-                        <li onClick={() => changeCategory('Others')}> 
+                        <li onClick={() => changeCategory('5')}> 
                             <Link to='/Others' >OTHERS</Link>
                         </li>
                     </ul>
