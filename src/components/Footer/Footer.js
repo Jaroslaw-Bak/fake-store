@@ -3,6 +3,7 @@ import facebook from '../..//assets/facebook.png';
 import instagram from '../..//assets/instagram.png';
 import youtube from '../..//assets/youtube.png';
 import twitter from '../..//assets/twitter.png';
+import { Link } from 'react-router-dom'
 
 function Footer() {
 	return (
@@ -12,7 +13,7 @@ function Footer() {
 					<h3 className={styles.title}>Links</h3>
 					<div>
 						<p>About</p>
-						<p>Contact us</p>
+						<Link to='/Contact' ><p>Contact us</p></Link>
 						<p>Help</p>
 						<p>Feedback</p>
 					</div>

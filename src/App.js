@@ -10,6 +10,7 @@ import Cart from './components/Cart/Cart';
 import axiosDataContext from './axiosDataContext';
 import { DataProvider } from './DataContext';
 import SingleProduct from './components/SingleProduct/SingleProduct';
+import Contact from './components/Contact/Contact';
 
 
 function App () {
@@ -40,6 +41,7 @@ function App () {
               <Route path='/Others' element={<Products />}/>
               <Route path='/Cart' element={<Cart />}/> 
               <Route path='/SingleProduct/:id' element={<SingleProduct />} />
+              <Route path='/Contact' element={<Contact />} />
             </Routes>
             <Footer />
           </Router>
