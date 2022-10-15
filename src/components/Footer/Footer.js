@@ -13,7 +13,7 @@ function Footer() {
 					<h3 className={styles.title}>Links</h3>
 					<div>
 						<p>About</p>
-						<Link to='/Contact' ><p>Contact us</p></Link>
+						<Link style={{textDecoration: 'none', color: 'white'}}to='/Contact' ><p>Contact us</p></Link>
 						<p>Help</p>
 						<p>Feedback</p>
 					</div>

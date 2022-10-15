@@ -1,0 +1,67 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    width: 100%;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+.wrapper:last-child {
+    align-items: flex-end;
+    color: blue;
+}
+
+.contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.contactInfo label {
+    width: 48%
+}
+.contactInfo label input{
+    width: 100%
+}
+
+textarea {
+    width: 100%;
+    min-height: 25vh;
+    resize: none;
+    outline: none;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+form button {
+    width: 100px;
+    display: inline-block;
+    background: darkcyan;
+    color: white;
+    padding: 9px 28px;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: background 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #074F57 ;
+
+}
+
+input, textarea {
+    padding: 3px;
+}
+@media only screen and (max-width: 768px) {
+    .contactInfo label {
+        width: 100%
+    }
+}
