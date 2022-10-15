@@ -11,21 +11,23 @@ const SingleProduct = () => {
   const [ product, setProduct] = useState();
 
   useEffect(() => {
-    id && fechBoot()
-  },[id])
-
-  const fechBoot = () => {
+    const fechBoot = () => {
       axios.get(`https://api.escuelajs.co/api/v1/products/${id}`)
       .then(response => {
         setProduct(response.data)
       })
   }
+
+    id && fechBoot()
+  },[id])
+
+  
     
   return (
     product && (
       <div className={styles.row}>    
         <div className={styles.col__2}>
-          <img src={product.images[0]} />
+          <img src={product.images[0]} alt=''/>
         </div>
         <div className={styles.col__2}>      
           <h1>{product.title}</h1>

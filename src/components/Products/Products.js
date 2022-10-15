@@ -29,6 +29,7 @@ const Products = () => {
           setProducts(sorted)          
         }
       sortArray(sortType)
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     },[sortType])
     
     

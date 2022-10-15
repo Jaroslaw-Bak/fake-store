@@ -168,7 +168,7 @@ const Home = () => {
                 </div>
                 <p className={styles.opinion}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
                 <div className={styles.profile}>
-                  <img src={profile} alt='profilePicture' alt=''/>
+                  <img src={profile} alt='profilePicture' />
                 </div>
                 <h3>Inna Hailie </h3>
             </div>
