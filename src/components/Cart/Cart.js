@@ -1,12 +1,24 @@
 import styles from './Cart.module.css'
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { DataContext } from "../../DataContext"
 
 
 const Cart = () => {
 
     const { cartData, removeFromCart } = useContext(DataContext)
+    const [ price, setPrice ] = useState(0)
 
+  useEffect(() => {
+    setPrice(0)
+    const totalPrice = () => {
+      cartData.map(element => {
+        setPrice(prevState => prevState + element.price )
+        return null
+      })
+    }
+    totalPrice()
+  },[cartData])
+   
   return (
     <>
           <div className={styles.cart}>
@@ -16,7 +28,7 @@ const Cart = () => {
                 <th></th>
                 <th className={styles.product}>Product</th>
                 <th>Price</th>
-                <th>Quantity</th>
+                
                 <th>Subtotal</th>
               </tr>
               {cartData.map(product => (
@@ -27,11 +39,6 @@ const Cart = () => {
                 </td>
                 <td className={styles.product}>{product.title}</td>
                 <td>{product.price}</td>
-                <td>
-                  <input
-                    placeholder='1'
-                    />
-                </td>
                 <td>{product.price}</td>
               </tr>
               ))}   
@@ -39,7 +46,7 @@ const Cart = () => {
             <div className={styles.total}>
               <div className={styles.total__flex}>
                 <p>Total: </p>
-                <p>?</p>
+                <p>{price}</p>
               </div>
               <button>Proceed to checkout</button>
             </div>      

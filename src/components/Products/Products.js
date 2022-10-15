@@ -6,7 +6,7 @@ import axios from 'axios'
 
 
 const Products = () => {
-    const { category } = useContext(DataContext);   
+    const { category } = useContext(DataContext);
     const [ products, setProducts ] = useState();
     const [ sortType, setSortType] = useState('default');
 
@@ -53,4 +53,4 @@ const Products = () => {
     </div>   
   )
 }
-export default Products;
+export default (Products);

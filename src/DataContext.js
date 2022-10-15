@@ -17,6 +17,7 @@ export const DataProvider = ({children}) => {
     const removeFromCart = (product) => {
         setCartData(prevState => prevState.filter(element => element !== product))
     }
+    
 
     return (
         <DataContext.Provider value={{category, changeCategory, addToCart, cartData, removeFromCart}}>
