@@ -7,7 +7,7 @@ const Product = ({id, title, price, images}) => {
     <div className={styles.row}>
       <div className={styles.productWrapper}>
         <Link to={`/SingleProduct/${id}`} >
-          <img src={images[0]} className={styles.image} alt='product image' />
+          <img src={images[0]} className={styles.image} alt='productimage' />
         </Link>
         <div className={styles.description}>
           <p className={styles.title}>{title}</p>

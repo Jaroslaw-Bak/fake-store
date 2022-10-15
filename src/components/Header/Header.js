@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
 import logo from '../../assets/logo3.png'
 import profile from '../../assets/profile.png'
-import favorite from '../../assets/favorite.png'
 import cart from '../../assets/cart.png'
 import menu from '../../assets/menu.png'
 
@@ -47,7 +46,7 @@ const Header = () => {
                     <div className={styles.icons__profile}>
                         <img src={profile} alt='profile' />
                         <Link to='/Cart'><img src={cart} alt='cart'/></Link>
-                        <img src={menu} className={styles.icons__profile__menu} onClick={toggleMenu} />
+                        <img src={menu} className={styles.icons__profile__menu} onClick={toggleMenu} alt='' />
                         
                     </div>
                 </div>

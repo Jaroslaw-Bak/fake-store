@@ -36,7 +36,7 @@ const Home = () => {
            
           </div>
           <div className={styles.col__2}>
-            <img src={img} />
+            <img src={img} alt='' />
           </div>
         </div>
       </div>
@@ -164,17 +164,17 @@ const Home = () => {
           <div className={styles.row}>
             <div className={styles.col__3}>
                 <div className={styles.icon}>
-                  <img src={comentIcon} />
+                  <img src={comentIcon} alt=''/>
                 </div>
                 <p className={styles.opinion}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
                 <div className={styles.profile}>
-                  <img src={profile} alt='profilePicture' />
+                  <img src={profile} alt='profilePicture' alt=''/>
                 </div>
                 <h3>Inna Hailie </h3>
             </div>
             <div className={styles.col__3}>
                 <div className={styles.icon}>
-                  <img src={comentIcon} />
+                  <img src={comentIcon} alt=''/>
                 </div>
                 <p className={styles.opinion}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
                 <div className={styles.profile}>
@@ -184,7 +184,7 @@ const Home = () => {
             </div>
             <div className={styles.col__3}>
                 <div className={styles.icon}>
-                  <img src={comentIcon} />
+                  <img src={comentIcon} alt='' />
                 </div>
                 <p className={styles.opinion}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
                 <div className={styles.profile}>
