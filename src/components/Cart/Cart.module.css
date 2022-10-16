@@ -37,6 +37,8 @@
 .cart table button {
     width: 20px;
     height: 20px;
+    background: none;
+    border: none;
 }
 .cart td:last-child {
     text-align: right;

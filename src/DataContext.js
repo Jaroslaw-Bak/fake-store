@@ -11,11 +11,21 @@ export const DataProvider = ({children}) => {
     }
 
     const addToCart = (product) => {
-        setCartData(prevState => [...prevState, product]);
+        const exist = cartData.find(x => x.id === product.id);
+        exist ? setCartData(cartData.map(x => 
+            x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x))
+            : setCartData([...cartData, {...product, qty: 1}])
     }
 
     const removeFromCart = (product) => {
-        setCartData(prevState => prevState.filter(element => element !== product))
+        
+        const exist = cartData.find((x => x.id === product.id));      
+        if (exist.qty === 1) {
+           setCartData(cartData.filter(x => x.id !== product.id))
+        }
+        else {
+            setCartData(cartData.map(x => x.id === product.id ? { ...exist, qty: exist.qty - 1 } : x))
+        }
     }
     
 
